@@ -1,0 +1,26 @@
+/* stylelint-disable */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+/* stylelint-enable */
+@import "tailwindcss";
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.hardcore-mode {
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%) !important;
+  animation: hardcore-bg 10s linear infinite alternate;
+}
+@keyframes hardcore-bg {
+  0% { filter: brightness(1) drop-shadow(0 0 10px #ff00cc); }
+  100% { filter: brightness(1.2) drop-shadow(0 0 30px #00ffea); }
+}
+.hardcore-mode .text-neon-pink {
+  text-shadow: 0 0 8px #ff00cc, 0 0 16px #ff00cc;
+}
+.hardcore-mode .bg-neon-pink {
+  box-shadow: 0 0 16px #ff00cc, 0 0 32px #ff00cc;
+}
+.hardcore-mode input, .hardcore-mode button {
+  box-shadow: 0 0 8px #00ffea, 0 0 16px #ff00cc;
+  border-width: 2px;
+}
